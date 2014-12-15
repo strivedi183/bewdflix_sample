@@ -1,0 +1,23 @@
+<%= form_for @movie do |f| %>
+  <div class="input-group">
+    <%= f.label :title, class: 'input-group-addon' %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group">
+    <%= f.label :summary, class: 'input-group-addon' %>
+    <%= f.text_field :summary, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group">
+    <%= f.label :youtube_embed_id, class: 'input-group-addon' %>
+    <%= f.text_field :youtube_embed_id, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group">
+    <%= f.label :thumbnail, class: 'input-group-addon' %>
+    <%= f.text_field :thumbnail, class: 'form-control' %>
+  </div>
+  <br>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
